@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Random UI Design Topic</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <style type="text/css">
+            body {
+                background: #222;
+                padding: 2rem;
+                font-family: sans-serif;
+            }
+            small {
+                color: #777;
+                display: inline-block;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 0.8rem;
+                letter-spacing: 2px;
+                padding-bottom: 0.4rem;
+                border-bottom: 2Rpx solid #444;
+            }
+            a {
+                color: #999;
+                font-size: 2rem;
+                text-transform: capitalize;
+                text-decoration: none;
+                padding-bottom: 2px;
+                -webkit-transition: all 400ms linear;
+                transition: all 400ms linear;
+            }
+            a:hover {
+                border-bottom: 1px dotted #777;
+                color: #BBB;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <small>Random design topic of today</small>
+        <div id="link"></div>
+        <!-- partial -->
+        <script type="text/javascript">
+            let model = [
+                "Sign Up",
+                "Checkout",
+                "Landing Page",
+                "Calculator",
+                "App Icon",
+                "User Profile",
+                "Settings",
+                "404 Page",
+                "Music Player",
+                "Social Share",
+                "Flash Messages",
+                "Single Product",
+                "Direct Messaging",
+                "Countdown Timer",
+                "On Off Switch",
+                "Pop Up",
+                "Overlay",
+                "Email Receipt",
+                "Analytics Chart",
+                "Leaderboard",
+                "Location Tracker",
+                "Monitoring Dashboard",
+                "Search",
+                "Onboarding",
+                "Boarding Pass",
+                "TV App",
+                "Subscribe",
+                "Dropdown",
+                "Contact Us",
+                "Map",
+                "Pricing",
+                "File Upload",
+                "Crowdfunding Campaign",
+                "Customize Product",
+                "Car Interface",
+                "Blog Post",
+                "Special Offer",
+                "Weather",
+                "Calendar",
+                "Testimonials",
+                "Recipe",
+                "Workout Tracker",
+                "ToDo List",
+                "Food Drink Menu",
+                "Favorites",
+                "Info Card",
+                "Invoice",
+                "Activity Feed",
+                "Coming Soon",
+                "Notifications",
+                "Job Listing",
+                "Press Page",
+                "Daily UI Logo",
+                "Header Navigation",
+                "Confirm Reservation",
+                "Icon Set",
+                "Breadcrumbs",
+                "Video Player",
+                "Shopping Cart",
+                "Background Pattern",
+                "Color Picker",
+                "Redeem Coupon",
+                "Workout of the Day",
+                "Best of 205",
+                "Select User Type",
+                "Notes Widget",
+                "Statistics",
+                "Hotel Booking",
+                "Flight Search",
+                "Trending",
+                "Event Listing",
+                "Schedule",
+                "Image Slider",
+                "Virtual Reality",
+                "Download App",
+                "Pre Order",
+                "Loading",
+                "Thank You",
+                "Pending Invitation",
+                "Itinerary",
+                "Date Picker",
+                "Status Update",
+                "Form",
+                "Button",
+                "Badge",
+                "Pagination",
+                "Progress Bar",
+                "Tooltip",
+                "Avatar",
+                "Terms Of Service",
+                "Create New",
+                "Curated For You",
+                "FAQ",
+                "Splash Screen",
+                "Product Tour",
+                "In Stock",
+                "Giveaway",
+                "Advertisement",
+                "Mobile Menu",
+                "Movie Card",
+                "Filter Products",
+                "Hover State",
+                "Newsfeed",
+                "Inbox",
+                "Currency Converter",
+                "Quote",
+                "Stroked Illustration",
+                "Contact List",
+                "Verification Code",
+                "Mockup",
+                "Redesign",
+                "Desk Inspiration",
+                "UI Kit",
+                "Empty States",
+                "Dial Pad",
+                "Style Guide",
+                "Email Application",
+                "Animation",
+                "Branding",
+                "Illustration",
+                "Wireframe",
+                "Brutal Design",
+                "Portfolio",
+                "Reminder",
+                "Alarm",
+                "Logo",
+                "Admin Panel",
+                "E Wallet",
+                "UI Interaction",
+                "Shape Invasion",
+                "E Commerce",
+                "Email Design",
+                "Low Poly",
+                "Collect UI Curation",
+                "Invite Friend",
+                "Montserrat",
+                "Photo album",
+                "Funny Animation",
+                "Poster",
+                "Project Management",
+                "Geometrical",
+                "Stamp",
+                "Character Animation",
+                "Playing Cards",
+                "Code Editor",
+                "About us",
+                "App Screens",
+                "Travel Destination",
+                "Real Estate",
+                "Welcome Screen",
+                "Online Course",
+                "Bot Interface",
+                "Halloween",
+                "Comments",
+                "Business Card",
+                "Book Cover",
+                "Packaging",
+                "Calligraphy",
+                "Documentation",
+                "Stranger Things",
+                "Online Blog",
+                "Magazine",
+                "Album Cover",
+                "Error State",
+                "Pitch Deck",
+                "Infographic",
+                "Scroll Transition"
+            ];
+            let topic = model[getRandomInt(0, (model.length-1))];
+            let html = `<a target="_blank" href="https://dribbble.com/search/${topic}">${topic}</a>`;
+            let container = document.getElementById("link");
+            
+            container.innerHTML = html;
+            
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        </script>
+    </body>
+</html>
